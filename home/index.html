@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannan's Chat/Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/chat app.png" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCLamBkFkj2tgiSAPJiVDWl-bggzqqsArU",
+    authDomain: "hannanchat-2a44c.firebaseapp.com",
+    databaseURL: "https://hannanchat-2a44c.firebaseio.com",
+    projectId: "hannanchat-2a44c",
+    storageBucket: "hannanchat-2a44c.appspot.com",
+    messagingSenderId: "308755766983",
+    appId: "1:308755766983:web:2dc4a5720079b54abb68e2",
+    measurementId: "G-7KF5SV7GPC"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    <div class="signout">
+        <img src="../images/logout.png" onclick="logOut()" height="30" width="40" class="logout" id="image" alt="">
+    </div>
+    <div class="main-div">
+        <div class="set-height">
+            <ul class="uldiv">
+            <div id="message">
+
+            </div>
+        </ul>
+    </div>
+       
+        <div class="textbar">
+            <input type="text" autocomplete="off" maxlength="2000" name="Message" placeholder="Aa" id="text">
+            <button onclick="send()" id="button"><img height="35" width="35" src="../images/send1.png" alt=""></button>
+        </div>
+        <div class="main-container">
+        </div>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

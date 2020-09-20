@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/chat app.png" type="image/x-icon">
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCLamBkFkj2tgiSAPJiVDWl-bggzqqsArU",
+    authDomain: "hannanchat-2a44c.firebaseapp.com",
+    databaseURL: "https://hannanchat-2a44c.firebaseio.com",
+    projectId: "hannanchat-2a44c",
+    storageBucket: "hannanchat-2a44c.appspot.com",
+    messagingSenderId: "308755766983",
+    appId: "1:308755766983:web:2dc4a5720079b54abb68e2",
+    measurementId: "G-7KF5SV7GPC"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+
+<body>
+    <div class="login-page">
+        <img src="../images/chat app.png" width="200" height="150" alt="">
+        <h1>Create Account</h1>
+        <div class="form">
+            <input required id="email" type="email" placeholder="Email"/>
+            <input required id="password" type="password" placeholder="password"/>
+            <button onclick="create_account()">login</button>
+        </div>
+      </div>
+
+
+      <script src="../app.js"></script>
+</body>
+</html>
